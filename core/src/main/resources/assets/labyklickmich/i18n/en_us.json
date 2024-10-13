@@ -1,0 +1,82 @@
+{
+    "labyklickmich": {
+        "settings": {
+            "header": {
+                "general": {
+                    "name": "General"
+                },
+                "todo": {
+                    "name": "GameMode: TODO"
+                }
+            },
+            "enabled": {
+                "name": "Enabled"
+            },
+            "showSupportedGameNote": {
+                "name": "Show Supported Game Note",
+                "description": "When enabled, a notification appears when joining a supported game mode."
+            },
+            "hideLeaderboard": {
+                "name": "Hide Default Leaderboard",
+                "description": "Hides the default Leaderboard in the scoreboard on the right side. Tipp: You can enable a custom Scoreboard in the widget section."
+            },
+            "disableDefaultBackpackHotkey": {
+                "name": "Disable Default Backpack Hotkey",
+                "description": "Deactivates the default hotkey (right mouse button) for the backpack. The backpack can still be opened via /backpack or the custom backpack hotkey."
+            },
+                "backpackHotkey": {
+                "name": "Custom Backpack Hotkey",
+                "description": "Sets a custom hotkey to open the backpack. This hotkey can be used to open the backpack ingame at any time, even if you do not hold it in your hand."
+            }
+        },
+        "notification": {
+            "welcome": {
+                "title": "Welcome to %s",
+                "text": "The KlickMich.net addon supports this game mode.",
+                "button": "Tell me more"
+            },
+            "switch": {
+                "cooldown": {
+                    "title": "Cooldown",
+                    "text": "This setting has a cooldown. Please wait a moment before changing it again."
+                }
+            },
+            "disable_while_ingame": {
+                "title": "Caution!",
+                "text": "Disabling the KlickMich addon while playing a supported game mode can cause unexpected behaviour! To fix problems, enable the addon and join the server again."
+            },
+            "leaderboard_possibly_not_changed": {
+                "title": "KlickMich.NET",
+                "text": "This change may not take effect until after this round."
+            }
+        },
+        "hudWidget": {
+            "ranking": {
+                "name": "Rank",
+                "label": "Rank"
+            },
+            "leaderboard": {
+                "name": "Leaderboard",
+                "label": "Leaderboard",
+                "displayedLines": {
+                    "name": "Max Displayed Lines"
+                },
+                "lineBreakAfterKey": {
+                    "name": "Line Break after Key",
+                    "description": "Inserts a line break in the first line, which moves the first line of the leaderboard down one line. "
+                },
+                "exampleLine": "Example Line %s"
+            },
+            "data_unknown": "No data"
+        }
+    },
+    "labymod": {
+        "hudWidgetCategory": {
+            "klickmichnet":{
+                "name": "KlickMich.net",
+                "description": "Widgets related to KlickMich.net or GameModes of KlickMich.net."
+            }
+        }
+    }
+}
+
