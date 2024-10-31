@@ -11,7 +11,7 @@ group = "de.corvonn"
 version = providers.environmentVariable("VERSION").getOrElse("1.0.0")
 
 labyMod {
-    defaultPackageName = "de.corvonn.labyklickmich" //change this to your main package name (used by all modules)
+    defaultPackageName = "de.corvonn.labyklickmichaddon" //change this to your main package name (used by all modules)
 
     minecraft {
         registerVersion(versions.toTypedArray()) {
@@ -25,7 +25,7 @@ labyMod {
     }
 
     addonInfo {
-        namespace = "labyklickmich"
+        namespace = "labyklickmichaddon"
         displayName = "KlickMich.Net Serversupport"
         author = "Corvonn"
         description = "Adds support for the Minecraft network klickmich.net"
