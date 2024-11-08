@@ -21,8 +21,8 @@ public abstract class AbstractGameMode {
     public final void disable(DisableReason reason) {
         if(reason == DisableReason.ADDON_DISABLED) {
             Notification.builder()
-                    .title(Component.translatable("labyklickmich.notification.disable_while_ingame.title"))
-                    .text(Component.translatable("labyklickmich.notification.disable_while_ingame.text"))
+                    .title(Component.translatable("labyklickmichaddon.notification.disable_while_ingame.title"))
+                    .text(Component.translatable("labyklickmichaddon.notification.disable_while_ingame.text"))
                     .icon(Icons.ERROR)
                     .duration(15000)
                     .buildAndPush();

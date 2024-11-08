@@ -31,9 +31,9 @@ public class GameModeRegistry {
 
         if(Main.getInstance().configuration().showSupportedGameNote().get()) {
             Notification.builder()
-                .title(Component.translatable("labyklickmich.notification.welcome.title")
+                .title(Component.translatable("labyklickmichaddon.notification.welcome.title")
                     .arguments(Component.text(currentGameMode.getGameMode().getDisplayName())))
-                .text(Component.translatable("labyklickmich.notification.welcome.text"))
+                .text(Component.translatable("labyklickmichaddon.notification.welcome.text"))
                 .icon(Icons.KLICKMICH_LOGO)
                 .buildAndPush();
         }

@@ -5,7 +5,7 @@ import net.labymod.api.client.resources.ResourceLocation;
 
 public class Icons {
     private static final String TEXTURES_PATH = "textures/";
-    private static final String NAMESPACE = "labyklickmich";
+    private static final String NAMESPACE = "labyklickmichaddon";
 
     public static final Icon KLICKMICH_LOGO = Icon.texture(ResourceLocation.create(NAMESPACE,  TEXTURES_PATH + "klickmich_icon.png"));
     public static final Icon WARNING = Icon.texture(ResourceLocation.create(NAMESPACE, TEXTURES_PATH + "warning.png"));

@@ -22,8 +22,8 @@ public class RankingHudWidget extends TextHudWidget<TextHudWidgetConfig> {
         super.load(config);
 
         line = createLine(
-            Component.translatable("labyklickmich.hudWidget.ranking.label"),
-            Component.translatable("labyklickmich.hudWidget.data_unknown")
+            Component.translatable("labyklickmichaddon.hudWidget.ranking.label"),
+            Component.translatable("labyklickmichaddon.hudWidget.data_unknown")
         );
     }
 

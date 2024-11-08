@@ -110,8 +110,8 @@ public class Configuration extends AddonConfig {
         if(Main.getGameModeRegistry().getCurrentGameMode() instanceof Todo todo) { //TODO: Main.getGameModeRegistry() returned null beim Starten
             Notification.builder()
                 .icon(Icons.INFO)
-                .title(Component.translatable("labyklickmich.notification.leaderboard_possibly_not_changed.title"))
-                .text(Component.translatable("labyklickmich.notification.leaderboard_possibly_not_changed.text"))
+                .title(Component.translatable("labyklickmichaddon.notification.leaderboard_possibly_not_changed.title"))
+                .text(Component.translatable("labyklickmichaddon.notification.leaderboard_possibly_not_changed.text"))
                 .buildAndPush();
 
             todo.sendNewSettings();

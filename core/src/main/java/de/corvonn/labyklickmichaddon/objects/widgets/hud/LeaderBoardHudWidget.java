@@ -31,10 +31,10 @@ public class LeaderBoardHudWidget extends TextHudWidget<LeaderBoardHudWidgetConf
         List<Component> exampleLines = new ArrayList<>();
         int maxLines = config.getDisplayedLines().get();
         for(int i = 1; i <= maxLines; i++)
-            exampleLines.add(Component.translatable("labyklickmich.hudWidget.leaderboard.exampleLine").argument(Component.text(i)));
+            exampleLines.add(Component.translatable("labyklickmichaddon.hudWidget.leaderboard.exampleLine").argument(Component.text(i)));
 
         line = createLine(
-            Component.translatable("labyklickmich.hudWidget.leaderboard.label"),
+            Component.translatable("labyklickmichaddon.hudWidget.leaderboard.label"),
             Component.empty()
         );
 

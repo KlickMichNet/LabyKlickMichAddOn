@@ -33,8 +33,8 @@ public class RichConfigProperty<T> extends ConfigProperty<T> {
             if(System.currentTimeMillis() - lastSwitch < switchCooldown) {
                 Laby.labyAPI().notificationController().push(
                         Notification.builder()
-                                .title(Component.translatable("labyklickmich.notification.switch.cooldown.title"))
-                                .text(Component.translatable("labyklickmich.notification.switch.cooldown.text"))
+                                .title(Component.translatable("labyklickmichaddon.notification.switch.cooldown.title"))
+                                .text(Component.translatable("labyklickmichaddon.notification.switch.cooldown.text"))
                                 .icon(Icons.WARNING)
                                 .build()
                 );
