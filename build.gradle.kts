@@ -8,7 +8,7 @@ plugins {
 val versions = providers.gradleProperty("net.labymod.minecraft-versions").get().split(";")
 
 group = "de.corvonn"
-version = providers.environmentVariable("VERSION").getOrElse("1.0.2")
+version = providers.environmentVariable("VERSION").getOrElse("1.0.3")
 
 labyMod {
     defaultPackageName = "de.corvonn.labyklickmichaddon" //change this to your main package name (used by all modules)

@@ -29,7 +29,7 @@ public class ServerClientConnector {
         protocol.registerPacket(
                 GameModePacket.PACKET_ID,
                 GameModePacket.class,
-                Direction.CLIENTBOUND, //TODO: Potentieller API-Bug - hier müsste eigentlich BOTH stehen
+                Direction.BOTH,
                 Main.getGameModeRegistry()::onGameModePacketReceived
         );
 
