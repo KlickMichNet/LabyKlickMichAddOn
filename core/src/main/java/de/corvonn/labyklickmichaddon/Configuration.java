@@ -107,7 +107,8 @@ public class Configuration extends AddonConfig {
     }
 
     private void onLeaderBoardSettingsChange() {
-        if(Main.getGameModeRegistry().getCurrentGameMode() instanceof Todo todo) { //TODO: Main.getGameModeRegistry() returned null beim Starten
+        if(Main.getGameModeRegistry() == null) return;
+        if(Main.getGameModeRegistry().getCurrentGameMode() instanceof Todo todo) {
             Notification.builder()
                 .icon(Icons.INFO)
                 .title(Component.translatable("labyklickmichaddon.notification.leaderboard_possibly_not_changed.title"))
