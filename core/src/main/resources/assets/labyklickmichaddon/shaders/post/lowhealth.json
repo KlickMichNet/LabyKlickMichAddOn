@@ -1,0 +1,40 @@
+{
+    "vertex": "labymod:shaders/post/default_post.vsh",
+    "fragment": "labyklickmichaddon:shaders/post/lowhealth.fsh",
+    "samplers": [
+        {
+            "name": "DiffuseSampler",
+            "index": 0
+        }
+    ],
+    "uniformBlocks": [
+        {
+            "name": "EffectData",
+            "uniforms": [
+                {
+                    "name": "desaturation",
+                    "type": "float"
+                },
+                {
+                    "name": "bloodIntensity",
+                    "type": "float"
+                }
+            ]
+        }
+    ],
+    "targets": [
+        "swap"
+    ],
+    "passes": [
+        {
+            "name": "lowhealth_effect",
+            "sourceTarget": "minecraft:main",
+            "destinationTarget": "swap"
+        },
+        {
+            "name": "lowhealth_effect",
+            "sourceTarget": "swap",
+            "destinationTarget": "minecraft:main"
+        }
+    ]
+}

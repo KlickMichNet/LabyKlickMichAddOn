@@ -7,6 +7,9 @@
                 },
                 "todo": {
                     "name": "GameMode: TODO"
+                },
+                "invasion": {
+                    "name": "GameMode: Invasion"
                 }
             },
             "enabled": {
@@ -27,6 +30,14 @@
                 "backpackHotkey": {
                 "name": "Custom Backpack Hotkey",
                 "description": "Sets a custom hotkey to open the backpack. This hotkey can be used to open the backpack ingame at any time, even if you do not hold it in your hand."
+            },
+            "lowHealthGrayScaleStrength": {
+                "name": "Low health Grayscale",
+                "description": "Adjusts the strength of the gray filter when your health is low."
+            },
+            "lowHealthVignetteStrength": {
+                "name": "Low health Vignette",
+                "description": "Sets the strength of a red vignette (blood effect) when your health is low."
             }
         },
         "notification": {

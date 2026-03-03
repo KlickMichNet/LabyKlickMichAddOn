@@ -1,11 +1,13 @@
 package de.corvonn.labyklickmichaddon.objects;
 
 import de.corvonn.labyklickmichaddon.gameMode.AbstractGameMode;
+import de.corvonn.labyklickmichaddon.gameMode.Invasion;
 import de.corvonn.labyklickmichaddon.gameMode.Todo;
 import org.jetbrains.annotations.NotNull;
 
 public enum GameMode {
     TODO("TODO", Todo.class),
+    INVASION("INVASION", Invasion.class),
     UNKNOWN("unknown", null);
 
     private final String name;

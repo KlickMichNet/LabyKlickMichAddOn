@@ -1,6 +1,7 @@
 package de.corvonn.labyklickmichaddon;
 
 import de.corvonn.labyklickmichaddon.listener.EventHandler;
+import de.corvonn.labyklickmichaddon.listener.PostProcessingScreenListener;
 import de.corvonn.labyklickmichaddon.objects.widgets.hud.AddonHudWidgetRegistry;
 import de.corvonn.labyklickmichaddon.utils.ServerClientConnector;
 import net.labymod.api.addon.LabyAddon;
@@ -22,7 +23,8 @@ public class Main extends LabyAddon<Configuration> {
         instance = this;
         configEnabled = configuration().enabled();
 
-        registerListener(new EventHandler());
+        super.registerListener(new EventHandler());
+        super.registerListener(new PostProcessingScreenListener(super.labyAPI().minecraft()));
         serverClientConnector = new ServerClientConnector();
 
         gameModeRegistry.requestCurrentGameMode();

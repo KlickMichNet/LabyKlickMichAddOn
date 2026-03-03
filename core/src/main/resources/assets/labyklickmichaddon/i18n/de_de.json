@@ -7,6 +7,9 @@
                 },
                 "todo": {
                     "name": "Spielmodus: TODO"
+                },
+                "invasion": {
+                    "name": "Spielmodus: Invasion"
                 }
             },
             "enabled": {
@@ -24,9 +27,17 @@
                 "name": "Deaktiviere Rucksack Hotkey",
                 "description": "Deaktiviert den standard Hotkey zum Öffnen vom Rucksack (rechtsklick). Der Rucksack kann weiterhin über den eigenen Rucksack Hotkey und den Befehl /backpack geöffnet werden"
             },
-                "backpackHotkey": {
+            "backpackHotkey": {
                 "name": "Eigener Rucksack Hotkey",
                 "description": "Stellt einen Hotkey ein, mit dem der Rucksack jederzeit geöffnet werden kann."
+            },
+            "lowHealthGrayScaleStrength": {
+                "name": "Graufilter bei niedriger Gesundheit",
+                "description": "Stellt die Stärke des Graufilters ein, wenn deine Gesundheit niedrig ist."
+            },
+            "lowHealthVignetteStrength": {
+                "name": "Vignette bei niedriger Gesundheit",
+                "description": "Stellt die Stärke einer roten Vignette (Bluteffekt) ein, wenn deine Gesundheit niedrig ist."
             }
         },
         "notification": {

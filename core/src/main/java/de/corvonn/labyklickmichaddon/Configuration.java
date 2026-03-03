@@ -1,6 +1,7 @@
 package de.corvonn.labyklickmichaddon;
 
 import de.corvonn.labyklickmichaddon.gameMode.AbstractGameMode;
+import de.corvonn.labyklickmichaddon.gameMode.Invasion.LowHealthEffectStrength;
 import de.corvonn.labyklickmichaddon.gameMode.Todo;
 import de.corvonn.labyklickmichaddon.objects.RichConfigProperty;
 import de.corvonn.labyklickmichaddon.utils.Icons;
@@ -9,6 +10,7 @@ import net.labymod.api.client.component.Component;
 import net.labymod.api.client.gui.screen.key.Key;
 import net.labymod.api.client.gui.screen.widget.widgets.input.KeybindWidget;
 import net.labymod.api.client.gui.screen.widget.widgets.input.SwitchWidget.SwitchSetting;
+import net.labymod.api.client.gui.screen.widget.widgets.input.dropdown.DropdownWidget.DropdownSetting;
 import net.labymod.api.configuration.loader.annotation.ConfigName;
 import net.labymod.api.configuration.loader.annotation.Exclude;
 import net.labymod.api.configuration.loader.annotation.SpriteSlot;
@@ -42,6 +44,11 @@ public class Configuration extends AddonConfig {
     @SpriteSlot(size = 32, y = 1)
     @KeybindWidget.KeyBindSetting(acceptMouseButtons = true)
     private final ConfigProperty<Key> backpackHotkey = new ConfigProperty<>(Key.B);
+
+    @SettingSection(value = "invasion")
+    @SpriteSlot(size = 32, y = 1, x = 1)
+    @DropdownSetting()
+    private ConfigProperty<LowHealthEffectStrength> lowHealthGrayScaleStrength = new ConfigProperty<>(LowHealthEffectStrength.NORMAL);
 
     @Exclude
     private final ConfigProperty<Integer> klickmichConfigVersion = new ConfigProperty<>(0);
@@ -79,6 +86,10 @@ public class Configuration extends AddonConfig {
 
     public ConfigProperty<Integer> klickmichConfigVersion() {
         return this.klickmichConfigVersion;
+    }
+
+    public ConfigProperty<LowHealthEffectStrength> lowHealthGrayScaleStrength() {
+        return this.lowHealthGrayScaleStrength;
     }
 
     //TODO: Sobald diese Logik von Nico gefixt wurde, wieder implementieren und das RichConfigProperty dadurch ersetzen

@@ -8,6 +8,7 @@ import net.labymod.api.Laby;
 import net.labymod.api.client.component.Component;
 import net.labymod.api.client.network.server.ServerController;
 import net.labymod.api.notification.Notification;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
@@ -48,6 +49,11 @@ public class GameModeRegistry {
 
     public @Nullable AbstractGameMode getCurrentGameMode() {
         return currentGameMode;
+    }
+
+    public @NotNull GameMode currentGameMode() {
+        if (currentGameMode == null) return GameMode.UNKNOWN;
+        return currentGameMode.getGameMode();
     }
 
     public void requestCurrentGameMode() {
